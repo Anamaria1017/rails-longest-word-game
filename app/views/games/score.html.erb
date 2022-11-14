@@ -1,0 +1,18 @@
+<h1>Your score</h1>
+
+<p><%= @result %></p>
+<%= link_to "Play again", new_path %>
+<%= hidden_field_tag :points, @points %>
+
+<!--
+<% if @include == true %>
+      <% if @word_exists == true %>
+        <%# <p><%= "Congratulations! #{@input} is a valid English word" %>
+        <p>Congratulations! <strong> <%= @input %> </strong> is a valid English word</p>
+      <% else %>
+        <p><%= "Sorry but #{@input} does not seem to be an English word..." %></p>
+      <% end %>
+    <% else %>
+      <p><%= "Sorry but #{@input} can't be built out of #{@letters}" %></p>
+    <% end %>
+-->
